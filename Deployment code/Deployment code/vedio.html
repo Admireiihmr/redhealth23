@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded YouTube Videos with Thumbnails</title>
+    <style>
+        .video-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .video-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-button::before {
+            content: "▶";
+            font-size: 24px;
+            color: white;
+        }
+
+        @media (max-width: 850px) {
+            .video-container {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-wrapper">
+        <div class="video-container" onclick="loadVideo('video1', 'K_5WHSI5_Wk')">
+            <img id="video1" src="https://img.youtube.com/vi/K_5WHSI5_Wk/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button"></div>
+        </div>
+
+        <div class="video-container" onclick="loadVideo('video2', 'mwolkCALvf8')">
+            <img id="video2" src="https://img.youtube.com/vi/mwolkCALvf8/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button"></div>
+        </div>
+
+        <div class="video-container" onclick="loadVideo('video3', 'eTffWEmld54')">
+            <img id="video3" src="https://img.youtube.com/vi/eTffWEmld54/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button"></div>
+        </div>
+
+        <div class="video-container" onclick="loadVideo('video4', '7Pfj68E2GS4')">
+            <img id="video4" src="https://img.youtube.com/vi/7Pfj68E2GS4/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-button"></div>
+        </div>
+    </div>
+
+    <script>
+        function loadVideo(id, videoId) {
+            document.getElementById(id).parentElement.innerHTML = `
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>`;
+        }
+    </script>
+
+</body>
+</html>

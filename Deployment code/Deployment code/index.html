@@ -1,0 +1,2284 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+    <title>IIHMR-RED-HEALTH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="./img/IIHMRB.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+    
+    <!-- Libraries Stylesheet -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/kode.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+  <style>
+    .bann {
+      width: 100%;
+      aspect-ratio: 3/1;
+      /* height: 400p; */
+      background-color: gray;
+      margin: 0 auto;
+
+    }
+
+    .vx video {
+      width: 100%;
+      /* height: 90vh; */
+      object-fit: cover;
+
+    }
+
+    .hero-x {
+      width: 100%;
+      height: 90vh;
+      /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/h.webp); */
+      background-position: center right;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+    }
+
+    .hero-x h1 {
+      font-size: 35px;
+      color: #000;
+    }
+
+    .hero-x p {
+      color: #000;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px 0;
+    }
+
+    /* .hero-x{
+        background-image: url(img/white-1.jpg);
+        background-position: bottom left;
+      }
+      .hero-x{
+        background-image: url(img/white-2.jpg);
+      }
+      .hero-x{
+        background-image: url(img/white-3.jpg);
+      }
+      .hero-x h1{
+        color: #000;
+      }
+
+      .hero-x p{
+        color: #000;
+      } */
+
+    .hero-x .form {
+
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      color: #000;
+      padding: 10px 80px;
+    }
+
+    .hero-x .form p {
+      color: #000;
+    }
+
+    .hero-x .time {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+
+    .hero-x .time .bt {
+      display: block;
+      background-color: var(--primary);
+      width: 100px;
+      aspect-ratio: 1/1;
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-x .time .bt h2,
+    .hero-x .time .bt p {
+      color: #fff;
+      margin: 0;
+    }
+
+    .hero-x form input {
+      width: 100%;
+      /* margin-bottom: 20px; */
+      padding: 8px;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+
+    .hero-x input[type=submit] {
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+    }
+
+
+
+    .hero-x .mini-para {
+      font-size: 14px;
+    }
+
+    .service-box {
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      height: 100%;
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: space-between; */
+      transition: all ease .5s;
+    }
+
+    .service-box .title-price {
+      display: flex;
+      text-align: center;
+      align-items: center;
+
+      justify-content: space-between;
+    }
+
+    .service-box .title-price h2 {
+      text-align: start;
+      font-size: 26px;
+      transition: all ease .5s;
+      font-weight: 700;
+    }
+
+    .service-box:hover {
+      border-bottom: 5px solid #a20909;
+    }
+
+    .service-box:hover .title-price h2 {
+      color: #a20909;
+    }
+
+    .service-box .price {
+      /* background-color: var(--primary); */
+      padding: 2px 20px;
+      border-radius: 50px;
+      color: #fff;
+    }
+
+    .service-box .price svg {
+      width: 45px;
+    }
+
+    .service-box .price p {
+      margin: 0;
+      font-size: 12px;
+    }
+
+    .service-box .price h3 {
+      color: #fff;
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .service-box a {
+      width: fit-content;
+      display: block;
+      text-align: center;
+      padding: 5px 10px;
+      background-color: var(--primary);
+      color: #fff;
+      margin: 0 auto;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .service-box .points {
+      margin: 10px 0;
+      font-weight: 600;
+    }
+
+    .service-box .points i {
+      color: var(--primary);
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .steps {
+      background-color: #f4f4f4;
+      /* margin: 10px; */
+      border-radius: 20px;
+      padding: 25px;
+      height: 100%;
+      /* max-width: 280px; */
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      transition: all ease .5s;
+    }
+
+    .steps img {
+      width: 50px;
+      background-color: #fff;
+      border-radius: 50px;
+    }
+
+    .steps h4 {
+      font-size: 18px;
+    }
+    .step p{
+      font-size: 14px;
+    }
+    .steps span {
+      font-size: 16px;
+    }
+
+    .steps:hover {
+      background-color: #a20909;
+      color: #fff;
+    }
+
+    .steps:hover h4 {
+      color: #fff;
+    }
+
+    .big-text {
+      font-size: 45px;
+      font-weight: 600;
+    }
+
+    .big-text span {
+      color: #a20909;
+    }
+
+    .sub-heading {
+      font-size: 26px;
+    }
+
+
+
+    .brand-btn {
+      background-color:#000080;
+      /* border: 2px solid #000; */
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 10px;
+      display: block;
+      width: fit-content;
+      text-align: center;
+      /* text-transform: uppercase; */
+      font-weight: 600;
+      transition: all ease .5s;
+      border: 2px solid #fff;
+
+
+    }
+
+    .brand-btn:hover {
+      background-color: #fff;
+      border: 2px solid #000080;
+      color: #000080;
+    }
+
+    .brand-btn-border {
+      display: block;
+      width: fit-content;
+
+      padding: 8px 20px;
+      border-radius: 50px;
+      background-color: #000080;
+      border: 2px solid #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      transition: all ease .5s;
+    }
+
+    .brand-btn-border:hover {
+      background-color: #fff !important;
+      color: #000080 !important;
+    }
+
+    .product {
+      border: 1px solid #7a7a7a;
+      padding: 10px;
+      margin: 10px;
+      position: relative;
+
+    }
+
+    .product img {
+      width: 100%;
+      aspect-ratio: 3/3;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 10px;
+    }
+
+    /* .product .Red Health Academy-tag {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 30px;
+    } */
+
+    .product a {
+      display: block;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .para {
+      color: #000;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    }
+
+    .curriculum {
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 20px;
+
+    }
+
+    .curriculum h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .curriculum h5 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./img/banner.webp);
+      background-position: center;
+      /* margin: 40px; */
+      border-radius: 50px;
+    }
+
+    .banner h2 {
+      color: #fff;
+      font-size: 65px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 700px;
+    }
+
+    .course-doc {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .course-doc a {
+      display: block;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #7a7a7a;
+      background-color: #f1f1f1;
+      text-decoration: none;
+
+
+    }
+
+    .course-doc a h2 {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0;
+      line-height: 18px;
+      text-wrap: nowrap;
+    }
+
+    .o-buttons {
+      display: flex;
+      gap: 5px;
+      width: fit-content;
+      margin: 10px auto;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      opacity: 1;
+
+    }
+
+    @media (max-width:600px) {
+      .o-buttons {
+        opacity: .3;
+      }
+
+      .o-buttons:hover {
+        opacity: 0.9;
+      }
+
+    }
+
+
+    .o-buttons button {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid#000080;
+      border-radius: 10px;
+    }
+
+    .wave-lines {
+      background-image: url(./img/colorfull-wave-element-stylized-line.webp);
+
+    }
+
+
+    /* Base styles for the tabs block */
+    .tabs {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    .tabs__labels {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+    }
+
+    /* Hide radio inputs */
+    .tabs__input {
+      display: none;
+    }
+
+    /* Style labels (tab buttons) */
+    .tabs__label {
+      display: block;
+      flex-grow: 1;
+      padding: 1rem;
+      font-size: 1.2rem;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .tabs__label span {
+      display: block;
+      font-size: .65em;
+      text-transform: uppercase;
+      margin-top: .25rem;
+    }
+
+    .tabs__label:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Highlight active tab */
+    #tab-1:checked~.tabs__labels label[for="tab-1"],
+    #tab-2:checked~.tabs__labels label[for="tab-2"],
+    #tab-3:checked~.tabs__labels label[for="tab-3"] {
+      background-color: #fff;
+      border-bottom: 2px solid #111;
+    }
+
+    /* Content container */
+    .tabs__content {
+      padding: 3rem 2rem;
+      background-color: #fff;
+      width: 100%;
+    }
+
+    /* Panels (content for each tab) */
+    .tabs__panel {
+      display: none;
+      animation: fadeIn 0.3s ease;
+      columns: 3;
+      column-width: 700px;
+      column-gap: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .tabs__panel-image {
+      margin-bottom: 2rem;
+    }
+
+    /* Show the active tab's content */
+    #tab-1:checked~.tabs__content #tab-panel-1,
+    #tab-2:checked~.tabs__content #tab-panel-2,
+    #tab-3:checked~.tabs__content #tab-panel-3 {
+      display: block;
+    }
+
+    table td {
+      font-size: 14px;
+    }
+
+
+    .accordion .accordion-item {
+      border: none;
+      /* border-bottom: 1px solid #e5e5e5; */
+      /* border: none; */
+      /* border-bottom: 1px solid #e5e5e5; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .accordion .accordion-item button[aria-expanded=true] {
+      border-bottom: 1px solid #a20909;
+    }
+
+    .accordion button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: #000000;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    .accordion button:hover,
+    .accordion button:focus {
+      cursor: pointer;
+      color: #a20909;
+    }
+
+    .accordion button:hover::after,
+    .accordion button:focus::after {
+      cursor: pointer;
+      color: #a20909;
+      border: 1px solid #a20909;
+    }
+
+    .accordion button .accordion-title {
+      /* padding: 1em 1.5em 1em 0; */
+      max-width: 95%;
+      display: block;
+      font-weight: 600;
+    }
+
+    .accordion button .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+    }
+
+    .accordion button .icon::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 9px;
+      left: 5px;
+      width: 10px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    .accordion button .icon::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 9px;
+      width: 2px;
+      height: 10px;
+      background: currentColor;
+    }
+
+    .accordion button[aria-expanded=true] {
+      /* color: #a20909; */
+      color: #a20909;
+      /* #a20909 */
+    }
+
+    .accordion button[aria-expanded=true] .icon::after {
+      width: 0;
+    }
+
+    .accordion button[aria-expanded=true]+.accordion-content {
+      opacity: 1;
+      max-height: 12em;
+      transition: all 200ms linear;
+      overflow-y: scroll;
+      will-change: opacity, max-height;
+    }
+
+    .accordion .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+    }
+
+    .accordion .accordion-content p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+      color: #000;
+    }
+
+    .ab {
+      background-color: #e2e2e2;
+      color: #404040;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 20px;
+      display: inline-block;
+      letter-spacing: 2px;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .course-heading {
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      /* padding: 20px; */
+      /* line-height: 1.4; */
+      color: black;
+      /* background-color: #F8F8F8; */
+      /* margin: 20px 0; */
+    }
+
+    .features-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      /* background-color: #F8F8F8; */
+    }
+
+    .feature-box {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-text h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .feature-text p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .hero-section {
+      /* display: flex; */
+      /* justify-content: space-between; */
+      /* align-items: center; */
+      background: #505050;
+      /* background: rgb(217,217,217);
+background: linear-gradient(130deg, rgba(217,217,217,1) 0%, rgba(80,80,80,1) 30%); */
+      color: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      /* max-width: 1200px; */
+      /* margin: 40px; */
+    }
+
+    .tagline {
+      display: inline-block;
+      background: rgb(84, 18, 10);
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 15px 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #d0d0d0;
+      margin-bottom: 20px;
+    }
+
+    .categories {
+      margin-bottom: 10px;
+    }
+
+    .categories span {
+      background: rgba(255, 0, 0, 0.2);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #a20909;
+      transition: all ease .5s;
+      text-transform: uppercase;
+    }
+
+    .con p {
+      color: #000;
+      transition: all ease .5s;
+
+    }
+
+    .steps:hover .categories span {
+      background-color: #ededed;
+    }
+
+    .steps:hover .con p {
+      color: #fff;
+    }
+
+    .downloads {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px 15px;
+      border-radius: 15px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+
+
+    .section {
+      padding: 50px 0;
+    }
+
+    .feature-box {
+      align-items: start;
+    }
+
+    .feature-box img {
+      background-color: #a20909;
+      padding: 10px;
+      border-radius: 10px;
+      margin-right: 10px;
+      box-shadow: 0 0 10px rgba(234, 117, 117, 0.5);
+    }
+
+    .feature-box h3 {
+      font-size: 22px;
+    }
+
+    .video video {
+      border-radius: 25px;
+    }
+
+    .btn {
+      border-radius: 12px;
+    }
+
+    .floor-buttons {
+      /* position: absolute; */
+      /* bottom: 250px; */
+      /* left: 80px; */
+      width: 70%;
+    }
+    .floor-buttons .brand-btn,.floor-buttons .brand-btn-border{
+      border: none;
+      border-radius: 10px;
+      text-transform: capitalize !important;
+    }
+    .floor-buttons .brand-btn-border{
+      background-color: #000080;
+    }
+    .floor-buttons .brand-btn-border:hover{
+      color: #505050;
+    }
+
+
+   
+
+    .pop-content{
+      position: absolute;
+      left: 80px;
+      width: 50%;
+      top: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      margin-top: 100px;
+    }
+    .pop-content h1{
+      font-size: 40px;
+    }
+
+    .pop-content p{
+      width: 75%;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+
+
+   
+
+
+    @media (max-width: 1440px) {
+  .pop-content {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    top: 1%; /* Adjusted for smaller screens */
+  }
+
+  .pop-content h1 {
+    font-size: 40px; /* Reduced font size */
+  }
+
+  .pop-content p {
+    width: 90%;
+    font-size: 28px; /* Reduced font size */
+    font-weight: 400;
+  }
+
+
+}
+
+
+@media (max-width: 1024px) {
+  .pop-content {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    top: -10%; /* Adjusted for smaller screens */
+  }
+
+  .pop-content h1 {
+    font-size: 30px; /* Reduced font size */
+  }
+
+  .pop-content p {
+    width: 90%;
+    font-size: 20px; /* Reduced font size */
+    font-weight: 400;
+  }
+}
+
+    @media (max-width:768px) {
+      .pop-content{
+      position: absolute;
+      left: 10px;
+      width: 50%;
+      top: -30%;
+    }
+
+
+    .pop-content h1{
+      font-size: 20px;
+
+    }
+
+    .pop-content p{
+      width: 90%;
+      font-size: 18px;
+      font-weight: 00;
+      
+    }
+      .hero-x {
+        width: 100%;
+        height: fit-content;
+        padding: 30px 0;
+        /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/h.webp); */
+        background-position: bottom;
+        display: flex;
+        align-items: center;
+      }
+
+      .hero-x h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        /* color: #fff; */
+      }
+
+      .hero-x p {
+        /* color: #fff; */
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px 0;
+      }
+
+      .hero-x .brand-btn {
+        margin-bottom: 10px;
+      }
+
+
+      .btn-primary {
+        font-size: 14px;
+        padding: 5px 15px !important;
+        border-radius: 10px;
+    }
+
+      .hero-x .form {
+        margin-top: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: #000;
+        padding: 10px 10px;
+      }
+
+      .mini-para {
+        font-size: 12px !important;
+      }
+
+      .hero-x .form p {
+        color: #000;
+      }
+
+      .hero-x .time {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+      }
+
+      .hero-x .time .bt {
+        display: block;
+        background-color: var(--primary);
+        width: 80px;
+        aspect-ratio: 1/1;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .hero-x .time .bt h2,
+      .hero-x .time .bt p {
+        color: #fff;
+        margin: 0;
+      }
+
+      .hero-x form input {
+        width: 100%;
+        /* margin-bottom: 10px; */
+        padding: 8px 10px;
+      }
+
+      .hero-x input[type=submit] {
+        background-color: var(--primary);
+        color: #fff;
+        border: none;
+      }
+
+      .hero-x .mini-para {
+        font-size: 14px;
+      }
+
+      .service-box {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        background-color: #fff3f4;
+      }
+
+      .service-box .title-price {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .service-box .title-price h2 {
+        text-align: start;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+
+
+      .service-box .price {
+        /* background-color: var(--primary); */
+        padding: 2px 20px;
+        border-radius: 50px;
+        color: #fff;
+      }
+
+      .service-box .price svg {
+        width: 45px;
+      }
+
+      .service-box .price p {
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .service-box .price h3 {
+        color: #fff;
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .service-box a {
+        width: fit-content;
+        display: block;
+        text-align: center;
+        padding: 5px 10px;
+        background-color: var(--primary);
+        color: #fff;
+        margin: 0 auto;
+        border-radius: 10px 10px 10px 10px;
+      }
+
+      .service-box .points {
+        margin: 0px 0;
+      }
+
+      .service-box .points i {
+        color: var(--primary);
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      .steps {
+        background-color: #fff3f4;
+        margin: 10px 5px;
+        border-radius: 10px;
+        padding: 10px;
+        /* max-width: 280px; */
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      }
+
+      .steps img {
+        width: 50px;
+        background-color: #fff;
+        border-radius: 50px;
+      }
+
+      .steps h5 {
+        font-size: 18px;
+      }
+
+      .steps span {
+        font-size: 14px;
+      }
+      
+
+
+      .email-modifier{
+        font-size: 15px;
+      }
+    }
+
+
+    @media (max-width: 425px) {
+  .pop-content {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    top: -60%; /* Adjusted for smaller screens */
+  }
+
+  .pop-content h1 {
+    font-size: 15px; /* Reduced font size */
+  }
+
+  .pop-content p {
+    width: 90%;
+    font-size: 10px; /* Reduced font size */
+    font-weight: 400;
+    margin-bottom: -15px;
+  }
+
+}
+@media (max-width: 375px) {
+  .pop-content {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    top: -60%; /* Adjusted for smaller screens */
+  }
+
+  .pop-content h1 {
+    font-size: 10px; /* Reduced font size */
+  }
+
+  .pop-content p {
+    width: 90%;
+    font-size: 8px; /* Reduced font size */
+    font-weight: 400;
+    margin-bottom: -15px;
+  }
+}
+@media (max-width: 320px) {
+  .pop-content {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    top: -80%; /* Adjusted for smaller screens */
+  }
+
+  .pop-content h1 {
+    font-size: 8px; /* Reduced font size */
+  }
+
+  .pop-content p {
+    width: 90%;
+    font-size: 7px; /* Reduced font size */
+    font-weight: 400;
+    margin-bottom: -15px;
+  }
+  .email-modifier{
+        font-size: 12px;
+  }
+}
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width:600px) {
+      .para {
+        font-size: 14px;
+      }
+
+      .banner {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./img/banner.webp);
+        background-position: center;
+
+      }
+
+      .banner h2 {
+        color: #fff;
+
+        font-size: 26px;
+
+      }
+
+      .floor-buttons {
+        width: 80%;
+        margin-top: 5px;
+        margin-left: 12px;
+      }
+
+      .floor-buttons .brand-btn {
+        font-size: 8px;
+        font-weight: 400;
+        padding: 2px 2px;
+        border-radius: 5px;
+        display: block;
+      }
+      
+      .floor-buttons .brand-btn-border {
+        border-radius: 5px;
+        font-size: 8px;
+        padding: 2px 2px;
+        display: block;
+      }
+
+      .floor-buttons .col-6 {
+        padding: 0;
+        padding-right: 5px;
+      }
+
+      .features-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .ab {
+    background-color: #e2e2e2;
+    color: #404040;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.display-5 {
+  font-size: calc(1.025rem + 2.1vw);
+}
+
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero-image {
+        margin-top: 20px;
+      }
+    
+
+    .section.bg-light.px-4{
+      padding: 30px 10px !important;
+    }
+    .hero-section{
+      padding: 30px 10px;
+    }
+
+
+  }
+  
+  </style>
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>8 The Green, Dover, DE 19901, United States</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center py-3">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+        </div>
+      </div>
+       <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+1 302 203 9295</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-2 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand p-0">
+      <img class="img-fluid me-3" src="./img/red.webp" alt="Icon">
+      <img class="img-fluid logo-img" src="./img/nacc1.webp" alt="Icon">
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+      <div class="navbar-nav ms-auto">
+        <a href="index.html" class="nav-item nav-link ">Home</a>
+        <a href="#course" class="nav-item nav-link">Course</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+      
+
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+        <!-- <a href="signup" class="nav-item nav-link">Signup</a> -->
+
+      </div>
+      <a href="#apply" class="btn btn-primary">Apply<i class="fa fa-arrow-right ms-3"></i></a>
+      <!-- <button class="btn-77" onclick="ref()">Refer & Earn <br> <span>$100 Per Day*</span> </button> -->
+
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <style>
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #00bd3d;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .whatsapp a {
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      color: #fff;
+      font-size: 28px;
+      transition: all ease .5s;
+    }
+
+    .whatsapp:hover a {
+      transform: scale(1.2);
+    }
+
+    .btn-77,
+    .btn-77 *,
+    .btn-77 :after,
+    .btn-77 :before,
+    .btn-77:after,
+    .btn-77:before {
+      border: 0 solid;
+      box-sizing: border-box;
+    }
+
+    .btn-77 {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: button;
+      background-color: #ffd8d8;
+      background-image: none;
+      color: #96373d;
+      cursor: pointer;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 100%;
+      line-height: 1.5;
+      margin: 0;
+      -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+      padding: 0;
+    }
+
+    .btn-77:disabled {
+      cursor: default;
+    }
+
+    .btn-77:-moz-focusring {
+      outline: auto;
+    }
+
+    .btn-77 svg {
+      display: block;
+      vertical-align: middle;
+    }
+
+    .btn-77 [hidden] {
+      display: none;
+    }
+
+    .btn-77 {
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse 2s infinite;
+      border: 1px solid;
+      border-radius: 999px;
+      box-shadow: 0 0 0 2em transparent;
+      box-sizing: border-box;
+      display: block;
+      font-weight: 900;
+      -webkit-mask-image: none;
+      overflow: hidden;
+      padding: 5px 10px;
+      position: relative;
+      text-transform: uppercase;
+      margin-left: 50px;
+      line-height: 14px;
+    }
+
+    @-webkit-keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 #96373d;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 #96373d;
+      }
+    }
+
+    .btn-77 span {
+      font-size: 12px;
+      margin-top: -5px;
+    }
+
+    @media (max-width:600px) {
+      .btn-77 {
+        margin: 40px auto 10px auto;
+      }
+    }
+    .ticker-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold; /* Makes text bold */
+  font-size: 28px; /* Increases font size */
+  color: #000080;
+}
+
+.text-black-all * {
+  color: black !important;
+}
+
+/* Default styles (for larger screens) */
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+h1.ab {
+  font-size: 2.5rem;
+}
+
+.display-5 {
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and above) */
+@media (max-width: 991px) {
+  h1.ab {
+    font-size: 2rem;
+  }
+  .display-5 {
+    font-size: 1.8rem;
+  }
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+/* Mobile devices (below 768px) */
+@media (max-width: 767px) {
+  h1.ab {
+    font-size: 1.8rem;
+  }
+  .display-5 {
+    font-size: 1.5rem;
+  }
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* Small Mobile devices (below 480px) */
+@media (max-width: 480px) {
+  h1.ab {
+    font-size: 1.5rem;
+  }
+  .display-5 {
+    font-size: 1.3rem;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+  .d-none {
+    display: none;
+  }
+  
+
+  </style>
+
+
+
+  <!-- <div class="whatsapp">
+    <a href="https://wa.me/+919581115357"> <i class="bi bi-whatsapp"></i> </a>
+  </div> -->
+  <div class="bann position-relative">
+    <img src="./img/herobanner.png" width="100%" class="src">
+
+    <div class="pop-content">
+      <h1 class=" text-primary">PG Certificate in Management
+        Pre-Hospital Care (PGCM - PRHC)</h1>
+        <p class="para">
+          A first-of-its-kind 11 -month course designed to equip
+healthcare professionals with specialized expertise in Emergency
+Medical Services (EMS) and Pre-Hospital Care
+        </p>
+        <br>
+        <div class="floor-buttons">
+          <div class="row w-100 ">
+            <div class="col-6">
+              <a class="brand-btn wow fadeInUp w-100 " href="#apply" data-wow-delay="0.5s">Apply Now</a>
+            </div>
+            <div class="col-6">
+              <a class="brand-btn-border wow fadeInUp w-100 " href="#course" data-wow-delay="0.5s">Know More</a>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+   
+  </div>
+
+  <section id="course" class="bg-light section">
+    <div class="container">
+      <div class="row justify-content-center  align-items-center ">
+        <div class="col-md-8 text-center">
+          <p class="wow fadeInUp ab">Course Benefits
+          </p>
+          <h2 class="display-5 mt-2 mb-3">
+            Why Enroll in <span >PGCM-PRHC</span>?
+          </h2>
+        </div>
+      </div>
+
+      <div class="features-container">
+        <div class="feature-box">
+          <img src="./img/career.svg" width="50px" class="src">
+          <div class="feature-text">
+            <h3>Career Opportunities</h3>
+            <p>Paramedical & Quality, Hospital EMS, Ambulance Operations, Academic, Business Growth, and Hospital
+              Administration.</p>
+            <div class="text-end">
+              <a href="https://admire.iihmrbangalore.edu.in/wp-content/uploads/2025/03/PGCM-PRHC-Career-Opportunities.pdf" target="_blank" class="btn btn-primary">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <img src="./img/curriculam.svg" width="50px" class="src">
+          <div class="feature-text">
+            <h3>Comprehensive Curriculum</h3>
+            <p>Gain in-depth knowledge with a well-structured program covering EMS, leadership, and operational
+              management.</p>
+            <div class="text-end">
+              <a href="https://admire.iihmrbangalore.edu.in/wp-content/uploads/2025/03/Course-Details_PGCM_PRHC-1.pdf" target="_blank" class="btn btn-primary">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <img src="./img/hand-shake-svgrepo-com.svg" width="50px" class="src">
+          <div class="feature-text">
+            <h3>Assured Placement Guarantee</h3>
+            <p>Get an Assured Placement with a Minimum Salary of ₹5 LPA in leading healthcare organizations.
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="feature-box">
+          <img src="./img/experts.svg" width="50px" class="src">
+          <div class="feature-text">
+            <h3>Learn From Expert</h3>
+            <p>Get trained by industry leaders, experienced clinicians, and EMS professionals for real-world expertise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" class="section bg-light px-4">
+    <div class="hero-section">
+      <div class="row justify-content-center  align-items-center ">
+        <div class="col-md-8 text-center">
+          <p class="wow fadeInUp ab">How to Enroll
+          </p>
+          <h2 class="display-5 mt-2 mb-4 text-white mb-3">
+            Admission Process
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+
+
+          <!-- <span class="">How To Apply</span>
+            <h1 class="text-white">Apply The Course In Simple 4 Steps</h1>
+            <p>There are many course categories that you can choose from and have the opportunity to gain new learning
+              experiences accompanied by our best mentors.</p> -->
+          <div class="row">
+            <div class="col-md-12 mb-3 px-2 ">
+              
+            <div class="steps d-flex gap-2 align-items-center justify-content-between ">
+              
+              <div class="con">
+                <h4>Fill the Interest Form</h4>
+                <p class="text-black m-0 ">You will receive the application form at your registered email ID.</p>
+              </div>
+              <div class="categories text-end mb-0 " style="width: fit-content;">
+                <span style="text-wrap: nowrap;">Step 1</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-12 mb-3 px-2 ">
+
+            
+            <div class="steps d-flex gap-2 align-items-center justify-content-between">
+              <div class="con">
+                <h4>Complete & Submit the Application</h4>
+                <p class="text-black m-0 ">Send your filled application to academy@red.health.</p>
+              </div>
+              <div class="categories text-end mb-0 " style="width: fit-content;">
+                <span style="text-wrap: nowrap;">Step 2</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-12 mb-3 px-2 ">
+            <div class="steps d-flex gap-2 align-items-center justify-content-between">
+              <div class="con">
+                <h4>Application Review</h4>
+                <p class="text-black m-0 ">Await further communication on the next steps.</p>
+              </div>
+              <div class="categories text-end mb-0 " style="width: fit-content;">
+                <span style="text-wrap: nowrap;">Step 3</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-12 mb-3 px-2 ">
+            <div class="steps d-flex gap-2 align-items-center justify-content-between">
+              <div class="con">
+                <h4>Group Discussion & Personal Interview (GDPI)</h4>
+                <p class="text-black m-0 ">You will receive details on scheduled dates.</p>
+              </div>
+              <div class="categories text-end mb-0 " style="width: fit-content;">
+                <span style="text-wrap: nowrap;">Step 4</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-12 mb-3 px-2 ">
+
+            <div class="steps d-flex gap-2 align-items-center justify-content-between">
+              <div class="con">
+                <h4>Physical Counselling</h4>
+                <p class="text-black m-0 ">Shortlisted candidates from the merit list will be invited for physical counselling at the campus.</p>
+              </div>
+              <div class="categories text-end mb-0 " style="width: fit-content;">
+                <span style="text-wrap: nowrap;">Step 5</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-12 mb-3 px-2 ">
+
+              <div class="steps d-flex gap-2 align-items-center justify-content-between">
+                <div class="con">
+                  <h4>Final Selection & Admission</h4>
+                  <p class="text-black m-0 ">Selected students will be notified about their admission.</p>
+                </div>
+                <div class="categories text-end mb-0 " style="width: fit-content;">
+                  <span style="text-wrap: nowrap;">Step 6</span>
+                </div>
+              </div>
+              </div>
+              
+          </div>
+
+
+
+        </div>
+        <div class="col-md-6">
+          <div class="hero-image">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2YzrTKJJ1ffqPOj4ySy6dpeIZSWfJgsHyruE-wHmSu1JGyQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 text-center">
+          <h1 class="wow fadeInUp ab">Why Choose Us</h1>
+          <div class="display-5 mt-2">
+            Hear From The <span>Experts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe src="vedio.html"></iframe>   
+  </section>
+  
+  <!-- About Start -->
+  <div id="about" class="container-xxl py-2">
+    <div class="container text-center">
+      <p class="ab fs-4 fs-md-3 fs-lg-2 fw-bold my-3">About Admire</p>
+    </div>
+    <div class="ticker-container">
+      <div class="ticker-text" style="text-align: center;">
+        Center for Advancing Digital Health
+      </div>
+    </div>  
+    <div class="container">
+      <div class="row g-5 align-items-center ">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="img-bordder">
+            <img src="./img/iihmr ADMIRE.jfif" style="border-radius: 25px;" class="w-100"  alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          
+          
+          <p class="mb-4 para" style="font-weight: normal;">
+            ADMIRE – The Centre for Advancing Digital Health (ADMIRE) is dedicated to the transformation of healthcare by leveraging digital health technologies, including artificial intelligence and machine learning. ADMIRE’s focus is to improve the quality of healthcare services, promote the universalization of health, and reduce inequities through cutting-edge research, education, and innovation at both national and global levels.
+<br><br>
+          </p>
+       
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+   <!-- About Start -->
+  <div id="about" class="container-xxl py-5">
+    <div class="container text-center">
+      <p class="ab fs-4 fs-md-3 fs-lg-2 fw-bold my-3">About Collaboration</p>
+    </div>
+    <div class="ticker-container">
+      <div class="ticker-text" >
+        IIHMR Bangalore & RED Health: Advancing Healthcare Mobility and Emergency Response
+      </div>
+    </div>  
+    <div class="container">
+      <div class="row g-5 align-items-center ">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="img-bordder">
+            <img src="./img/iihmr-red.jpeg" style="border-radius: 25px;" class="w-100"  alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          
+          
+          <p class="mb-4 para" style="font-weight: normal;">
+            The Institute of Health Management Research, Bangalore (IIHMR Bangalore) is a premier institution for hospital and health management education in South India. Formerly known as the Indian Institute of Health Management Research, IIHMR Bangalore has been a leader in health and hospital management education, training, and research for over a decade. Located in the heart of Silicon Valley at Electronic City Phase-1, the campus is surrounded by renowned IT and allied companies such as Wipro, HP, and Infosys, fostering an ecosystem of innovation and industry collaboration. <br>
+            <br>
+
+            In partnership with RED Health, a pioneer in healthcare mobility and emergency response, IIHMR Bangalore is committed to developing highly skilled professionals in this critical field. This collaboration merges academic excellence with real-world EMS expertise, creating a transformative learning experience that equips healthcare professionals with cutting-edge knowledge and practical skills.<br>
+            <br>
+            
+            Together, IIHMR Bangalore and RED Health aim to shape the future of emergency medical services in India, driving innovation and excellence in healthcare mobility and response.
+          </p>
+          <a class="btn btn-primary mt-3" href="#apply">Apply Now</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-6">
+          <h3 style="color:#000080; font-weight: bold;">About Post Graduate Certificate in Management - Pre-Hospital Care</h3>
+          <p style="color:black; margin-top: 10px; text-align: justify; line-height: 1.6;">
+            It is a unique and comprehensive program designed to equip professionals with the critical
+            knowledge and skills necessary to efficiently manage pre-hospital emergency care. It bridges
+            clinical expertise with managerial and technical competencies, focusing on emerging challenges
+            in emergency medical services (EMS).
+          </p>
+          <p style="color:black; margin-top: 10px; text-align: justify; line-height: 1.6;">
+            It is a first-of-its-kind program launched by IIHMR Bangalore and RED Health, bringing their
+            expertise together as a premier healthcare education university and India’s largest and only
+            JCI-accredited EMS company, respectively. Globally, such programs are offered by universities
+            like Harvard University and the Royal College of Emergency Medicine, UK, but there are still
+            no parallel programs in the global south that prepare EMS professionals for leadership roles.
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+        <!-- Eligibility Criteria Section -->
+<div class="col-md-6">
+  <h3 style="color:#000080; font-weight: bold;">Eligibility Criteria</h3>
+  <table class="table table-bordered" style="color:black; margin-top: 10px;">
+    <tbody>
+      <tr>
+        <th style="width: 30%;">Educational Qualification</th>
+        <td class="text-black">
+          <p style="color: #000;">A bachelor’s degree in:</p>
+          <ul>
+            <li>Medicine (MBBS, BDS, BAMS, BHMS, BNYS)</li>
+            <li>Nursing (B.Sc. Nursing or GNM with additional qualifications)</li>
+            <li>Allied Health Sciences (B.Sc. in Paramedical Sciences, Emergency Care, or related fields)</li>
+          </ul>
+          <p style="color: #000;">Diploma holders in Paramedical or Emergency Medical Services with a minimum of 2 years of work experience in healthcare or EMS.</p>
+        </td>
+      </tr>
+      <tr>
+        <th>Work Experience (Preferred but not mandatory)</th>
+        <td>
+          <ul>
+            <li>Experience in healthcare, emergency medical services, or related fields is desirable.</li>
+            <li>Fresh graduates with a strong interest in EMS and pre-hospital care are also eligible.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Age Limit</th>
+        <td>Applicants should ideally be between 21-35 years of age. Exceptions can be made for experienced professionals.</td>
+      </tr>
+      <tr>
+        <th>Other Requirements</th>
+        <td>
+          <ul>
+            <li>Basic Computer Skills: Familiarity with computer usage for data management and IT applications in EMS.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    <div class="text-center mt-4">
+      <a href="https://admire.iihmrbangalore.edu.in/wp-content/uploads/2025/03/PGCM-PRHC_FAQS.pdf" download="" class="btn btn-primary" 
+         style="padding: 10px 20px; font-size: 16px; border-radius: 8px;">
+        Download Frequently Asked Questions
+      </a>
+    </div>
+  </section>
+  
+  
+
+
+
+    <!-- Footer Start -->
+   <style>
+    .footer{
+      border-radius: 25px;
+      background-color: #505050;
+      background-image: none;
+      
+    }
+
+    /* social media icons  */
+    .social-icons {
+    display: flex;
+    text-align: center;
+    gap: 30px; /* Space between icons */
+}
+
+/* Style for each icon */
+.icon {
+    text-decoration: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: right;
+    border-radius: 50%;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.icon:hover {
+    transform: scale(1.1);
+}
+
+   </style>
+   <section class="px-3 bg-light pb-3">
+  <div id="contact" class="container-fluid footer text-light pt-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5 justify-content-center">
+
+      <div class="col-12 " style="">
+        <div class="row justify-content-center">
+          <div class="col-md-4 bg-white p-3" style="border-radius: 25px;">
+            <img src="./img/red.webp" width="100%" alt="">
+
+          </div>
+        </div>
+      </div>
+        
+        <!-- <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Quick Links</h5>
+          <a class="btn btn-link" href="about">About Us</a>
+          <a class="btn btn-link" href="contact">Contact Us</a>
+          <a class="btn btn-link" href="signup">Signup</a>
+          <a class="btn btn-link" href="login">Login</a>
+          <a class="btn btn-link" href="refer-signup">Refer And Earn</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Company</h5>
+          <a class="btn btn-link" href="privacy-policy">Privacy Policy</a>
+          <a class="btn btn-link" href="terms-and-conditions">Terms & Condition</a>
+          <a class="btn btn-link" href="refund-policy">Refund Policy</a>
+        </div> -->
+
+        <div class="col-lg-3 col-md-6">
+           <h5 class="text-light mb-4"><i class="bi bi-telephone me-3"></i>9080096302</h5>
+          <!-- <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>8 The Green, Dover, DE 19901, United States
+          </p> -->
+          <!-- <p class="mb-2">
+          <i class="bi bi-telephone me-3"></i>9080096302
+          
+          </p> -->
+          <!-- <p class="mb-2">
+          <i class="bi bi-whatsapp me-3"></i>+91 9581115357
+          </p> -->
+          
+          <!-- <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>academy@red.health
+          </p> -->
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/showcase/admire-iihmr-bangalore" target="_blank" class="icon twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/showcase/admire-iihmr-bangalore" target="_blank" class="icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.linkedin.com/showcase/admire-iihmr-bangalore" target="_blank" class="icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/showcase/admire-iihmr-bangalore" target="_blank" class="icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h3 class="text-light mb-4 d-flex align-items-center" style="font-size: 18px; white-space: nowrap; overflow: visible;">
+              <i class="fa fa-envelope me-2 flex-shrink-0"></i> 
+              <span style="white-space: nowrap;" class="email-modifier">
+                  pgcm.prhc@iihmrbangalore.edu.in
+              </span>
+          </h3>
+      </div>
+      
+      
+                    
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-12 text-center  mb-3 mb-md-0">
+            &#169 Copyright 2025 IIHMR Banglore All Rights Reserved.
+          </div>
+          <!-- <div class="col-md-6 text-center text-md-end">
+
+            Designed By
+            <a class="border-bottom" href="https://kodestudio.in">Kode Studio</a>
+            
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>
+  <!-- Footer End -->
+
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+
+  <script>
+    function ref(){
+      window.location.href='refer-signup';
+    }
+  </script>
+
+<!-- All Bootstrap class -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+  <!-- <script src="./code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/wow/wow.min.js"></script>
+  <script src="./lib/easing/easing.min.js"></script>
+  <script src="./lib/waypoints/waypoints.min.js"></script>
+  <script src="./lib/counterup/counterup.min.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./lib/lightbox/js/lightbox.min.js"></script> -->
+
+  <!-- Template Javascript -->
+  <script src="./js/main.js"></script>  <script>
+
+    const items = document.querySelectorAll(".accordion button");
+
+    function toggleAccordion() {
+      const itemToggle = this.getAttribute('aria-expanded');
+
+      for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+      }
+
+      if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+
+    function playVideo(container, videoId) {
+    const iframe = container.querySelector('.video-frame');
+    const thumbnail = container.querySelector('.video-thumbnail');
+    
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&modestbranding=1&rel=0`;
+    iframe.classList.remove('d-none');
+    thumbnail.style.display = 'none';
+
+    }
+
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+    // $(document).ready(function () {
+    //   var owl = $(".vx").owlCarousel({
+    //     items: 1,
+    //     loop: true,
+    //     nav: false,
+    //     dots: true,
+    //     autoplay: false,
+    //     autoplayHoverPause: true,
+    //     mouseDrag: false,
+    //     touchDrag: false
+    //   });
+
+    //   function getActiveVideo() {
+    //     return $(".owl-item.active video")[0];
+    //   }
+
+    //   function updateIcons(video) {
+    //     // Play/Pause Icon
+    //     if (video.paused) {
+    //       $("#play-pause i.fa-play").show();
+    //       $("#play-pause i.fa-pause").hide();
+    //     } else {
+    //       $("#play-pause i.fa-play").hide();
+    //       $("#play-pause i.fa-pause").show();
+    //     }
+
+    //     // Mute/Unmute Icon
+    //     if (video.muted) {
+    //       $("#mute-unmute i.fa-volume-mute").show();
+    //       $("#mute-unmute i.fa-volume-up").hide();
+    //     } else {
+    //       $("#mute-unmute i.fa-volume-mute").hide();
+    //       $("#mute-unmute i.fa-volume-up").show();
+    //     }
+    //   }
+
+    //   function pauseAndMuteAllExcept(activeVideo) {
+    //     $("video").each(function () {
+    //       if (this !== activeVideo) {
+    //         this.pause();
+    //         this.muted = true;
+    //       }
+    //     });
+    //   }
+
+    //   function pauseAndMuteAllVideo() {
+    //     $("video").each(function () {
+    //       // if (this !== activeVideo) {
+    //       this.pause();
+    //       this.muted = true;
+    //       // }
+    //     });
+    //   }
+
+    //   // Left Button - Slide to Previous
+    //   $("#left-btn").click(function () {
+    //     owl.trigger("prev.owl.carousel");
+    //     pauseAndMuteAllVideo();
+    //     var video = getActiveVideo();
+    //     updateIcons(video);
+    //   });
+
+    //   // Play/Pause Button
+    //   $("#play-pause").click(function () {
+    //     var video = getActiveVideo();
+    //     if (video.paused) {
+    //       // pauseAndMuteAllExcept(video);
+    //       video.play();
+    //     } else {
+    //       video.pause();
+    //     }
+    //     updateIcons(video);
+    //   });
+
+    //   // Right Button - Slide to Next
+    //   $("#right-btn").click(function () {
+    //     owl.trigger("next.owl.carousel");
+    //     pauseAndMuteAllVideo();
+    //     var video = getActiveVideo();
+    //     updateIcons(video);
+
+
+    //   });
+
+    //   // Mute/Unmute Button
+    //   $("#mute-unmute").click(function () {
+    //     var video = getActiveVideo();
+    //     video.muted = !video.muted;
+    //     updateIcons(video);
+    //   });
+
+    //   // On slide change, pause all videos and play the active one
+    //   owl.on("changed.owl.carousel", function () {
+    //     var activeVideo = getActiveVideo();
+    //     pauseAndMuteAllExcept(activeVideo);
+    //     activeVideo.play();
+    //     updateIcons(activeVideo);
+    //   });
+
+    //   // Initialize icons for the first active video
+    //   updateIcons(getActiveVideo());
+    // });
+    
+    
+
+  </script>
+
+
+</body></html>
